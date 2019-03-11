@@ -1,0 +1,9 @@
+
+
+
+VCf<-function(x, p50, slope){
+  1/(1+exp((slope/25)*(x-p50)))*100
+}
+
+curve(VCf(x,p50= -10, slope=20), from=0, to=-15, col=2)
+curve(VCf(x,p50= -5, slope=20), from=0, to=-15, add=T, col=2)
